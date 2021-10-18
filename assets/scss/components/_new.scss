@@ -1,0 +1,77 @@
+.new {
+  &__container {
+    padding-top: 1rem;
+  }
+
+  &__content {
+    background: var(--container-color);
+    position: relative;
+    width: 242px;
+    overflow: hidden;
+    text-align: center;
+    padding: 2rem 0 1.5rem 0;
+    border-radius: 0.75rem;
+
+    &:hover .new__img {
+      transform: translateY(-0.5rem);
+    }
+
+    &:hover .new__button {
+      right: 0;
+    }
+  }
+
+  &__tag {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    background-color: var(--first-color);
+    color: var(--title-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: var(--small-font-size);
+  }
+
+  &__img {
+    width: 120px;
+    transition: 0.3s;
+    margin-bottom: var(--mb-0-5);
+  }
+
+  &__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-75);
+  }
+
+  &__prices {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+
+  &__discount {
+    color: var(--first-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    text-decoration: line-through;
+  }
+
+  &__button {
+    display: inline-flex;
+    position: absolute;
+    padding: 0.5rem;
+    border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
+    right: -3rem;
+    bottom: 0;
+  }
+
+  &__icon {
+    font-size: 1.25rem;
+  }
+}
